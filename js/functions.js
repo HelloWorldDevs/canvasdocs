@@ -1203,7 +1203,7 @@ var SEMICOLON = SEMICOLON || {};
 				if (!$(event.target).closest('#side-panel').length) { $body.toggleClass('side-panel-open', false); }
 			});
 
-			$("#top-search-trigger").click(function(e){
+			$("#top-search-trigger").not(".helloworld").click(function(e){
 				$body.toggleClass('top-search-open');
 				$topCart.toggleClass('top-cart-open', false);
 				$( '#primary-menu > ul, #primary-menu > div > ul' ).toggleClass("show", false);
